@@ -1,6 +1,6 @@
 <template>
   <header>
-    <h1 class="title">{{ $route.name }}</h1>
+    <img src="~/assets/image/logo.png" class="title">
     <nav class="nav">
       <ul class="menu-group">
         <li class="menu-item" v-if="!$auth.loggedIn">
@@ -38,12 +38,14 @@ header {
   height: 100px;
   padding: 0 50px;
   margin-bottom: 30px;
-  background-color: darkgrey;
+  background-color: black;
   align-items: center;
 }
 
 .title {
   margin-right: auto;
+  width: 30%;
+  height: 80%;
 }
 
 .menu-item {
@@ -53,7 +55,7 @@ header {
 }
 
 .menu-item a {
-  color: black;
+  color: white;
   text-decoration: none;
   cursor: pointer;
 }

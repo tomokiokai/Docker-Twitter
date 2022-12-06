@@ -14,3 +14,5 @@ Route::group([
     Route::post('refresh', [AuthController::class, 'refresh']);
     Route::get('user', [AuthController::class, 'me']);
 });
+
+Route::apiResource('post', PostController::class);
